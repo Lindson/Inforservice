@@ -117,12 +117,9 @@
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                {foreach from =$SER  item = S}
+                                    <option value="{$S.id_servico}">{$S.tipo}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>
@@ -140,7 +137,7 @@
                             <label class="control-label" for="Tecnico">Técnico</label>
                             <select id="tecnico" name="id_tecnico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                {foreach from =$FUN  item = F}
+                                {foreach from =$TEC  item = F}
                                     <option value="{$F.id_tecnico}">{$F.nome}</option>
                                 {/foreach}
                             </select>
@@ -175,16 +172,12 @@
                             </select>
                         </div>
                         <div class="form-group has-warning col-sm-5">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                {foreach from =$CAT  item = A}
+                                    <option value="{$A.id_categoria}">{$A.categoria}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>        
@@ -227,8 +220,9 @@
                             <label class="control-label" for="Tecnico">Técnico</label>
                             <select type="text" name="id_tecnico" id="id_tecnico" class="form-control" required>
                                 <option value="">Selecionar...</option>
-                                <option value="1">LINDSON AMARO</option>
-                                <option value="2">RONILSON</option>
+                                {foreach from =$TEC  item = F}
+                                    <option value="{$F.id_tecnico}">{$F.nome}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>
@@ -237,25 +231,19 @@
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="id_servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                {foreach from =$SER  item = S}
+                                    <option value="{$S.id_servico}">{$S.tipo}</option>
+                                {/foreach}
 
                             </select>
                         </div>
                         <div class="form-group has-success col-sm-6">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="id_categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                {foreach from =$CAT  item = A}
+                                    <option value="{$A.id_categoria}">{$A.categoria}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>   
@@ -316,8 +304,9 @@
                             <label class="control-label" for="Tecnico">Técnico</label>
                             <select type="text" name="id_tecnico" id="id_tecnico" class="form-control" required>
                                 <option value="">Selecionar...</option>
-                                <option value="1">LINDSON AMARO</option>
-                                <option value="2">RONILSON</option>
+                                {foreach from =$TEC  item = F}
+                                    <option value="{$F.id_tecnico}">{$F.nome}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>
@@ -326,12 +315,9 @@
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="id_servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                {foreach from =$SER  item = S}
+                                    <option value="{$S.id_servico}">{$S.tipo}</option>
+                                {/foreach}
 
                             </select>
                         </div>
@@ -362,16 +348,12 @@
                             </select>
                         </div>
                         <div class="form-group has-warning col-sm-8">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="id_categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                {foreach from =$CAT  item = A}
+                                    <option value="{$A.id_categoria}">{$A.categoria}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>   

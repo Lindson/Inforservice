@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Categorias' => $baseDir . '/model/Categorias.class.php',
     'ClienteModal' => $baseDir . '/model/ClienteModal.class.php',
     'Clientes' => $baseDir . '/model/Clientes.class.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
@@ -15,6 +16,7 @@ return array(
     'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Prioridades' => $baseDir . '/model/Prioridades.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
+    'Servicos' => $baseDir . '/model/Servicos.class.php',
     'Sistema' => $baseDir . '/model/Sistema.class.php',
     'Tecnicos' => $baseDir . '/model/Tecnicos.class.php',
     'Template' => $baseDir . '/model/Template.class.php',

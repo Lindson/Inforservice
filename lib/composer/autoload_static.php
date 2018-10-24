@@ -25,6 +25,7 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
     );
 
     public static $classMap = array (
+        'Categorias' => __DIR__ . '/../..' . '/model/Categorias.class.php',
         'ClienteModal' => __DIR__ . '/../..' . '/model/ClienteModal.class.php',
         'Clientes' => __DIR__ . '/../..' . '/model/Clientes.class.php',
         'Conexao' => __DIR__ . '/../..' . '/model/Conexao.class.php',
@@ -34,6 +35,7 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Prioridades' => __DIR__ . '/../..' . '/model/Prioridades.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'Servicos' => __DIR__ . '/../..' . '/model/Servicos.class.php',
         'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Tecnicos' => __DIR__ . '/../..' . '/model/Tecnicos.class.php',
         'Template' => __DIR__ . '/../..' . '/model/Template.class.php',

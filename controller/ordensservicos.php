@@ -9,6 +9,8 @@ $clientes = new Clientes();
 $ordensservico = new Ordensservicos();
 $tecnicos = new Tecnicos();
 $prioridades = new Prioridades();
+$servicos = new Servicos();
+$categorias = new Categorias();
 
 if (isset($_POST['id_cliente']) && isset($_POST['id_tecnico'])):
 
@@ -56,15 +58,18 @@ $clientes->GetTodosClientes();
 $ordensservico->GetOrdensServicos();
 $tecnicos->GetTecnicos();
 $prioridades->GetPrioridades();
+$servicos->GetServicos();
+$categorias->GetCategoria();
 
+$smarty->assign('PRI', $prioridades->GetItens()); //P
+$smarty->assign('OSS', $ordensservico->GetItens()); //O
+$smarty->assign('CLI', $clientes->GetItens()); //C
+$smarty->assign('TEC', $tecnicos->GetItens());  //F
+$smarty->assign('PAGINAS', $ordensservico->ShowPaginacao());  //
+$smarty->assign('VLR', $ordensservico->GetRegistro()); //V
+$smarty->assign('SER', $servicos->GetItens());  //S
+$smarty->assign('CAT', $categorias->GetItens());  //A
 
-$smarty->assign('PRI', $prioridades->GetItens());
-$smarty->assign('OSS', $ordensservico->GetItens());
-$smarty->assign('CLI', $clientes->GetItens());
-$smarty->assign('TEC', $tecnicos->GetItens());
-$smarty->assign('PAGINAS', $ordensservico->ShowPaginacao());
-$smarty->assign('VLR', $ordensservico->GetRegistro());
-//
 //echo '<pre>';
 //var_dump($_POST);
 //echo '</pre>';

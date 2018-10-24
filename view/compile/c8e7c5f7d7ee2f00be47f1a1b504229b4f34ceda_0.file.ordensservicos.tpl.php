@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-01 02:30:02
+/* Smarty version 3.1.33, created on 2018-10-24 03:16:36
   from 'C:\xampp\htdocs\os\view\ordensservicos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb16a8a9ad760_64128650',
+  'unifunc' => 'content_5bcfc7f4329545_61215917',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8e7c5f7d7ee2f00be47f1a1b504229b4f34ceda' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\ordensservicos.tpl',
-      1 => 1532041120,
+      1 => 1540343776,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb16a8a9ad760_64128650 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bcfc7f4329545_61215917 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <ol class="breadcrumb">
         <li><a href="">Início</a></li>
@@ -174,12 +174,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SER']->value, 'S');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['S']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['S']->value['id_servico'];?>
+"><?php echo $_smarty_tpl->tpl_vars['S']->value['tipo'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>
@@ -207,7 +213,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <select id="tecnico" name="id_tecnico" class="form-control" required>
                                 <option value="">Selecione...</option>
                                 <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['FUN']->value, 'F');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['TEC']->value, 'F');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['F']->value) {
 ?>
@@ -250,16 +256,21 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                         <div class="form-group has-warning col-sm-5">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CAT']->value, 'A');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['A']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['A']->value['id_categoria'];?>
+"><?php echo $_smarty_tpl->tpl_vars['A']->value['categoria'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>        
@@ -302,8 +313,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label class="control-label" for="Tecnico">Técnico</label>
                             <select type="text" name="id_tecnico" id="id_tecnico" class="form-control" required>
                                 <option value="">Selecionar...</option>
-                                <option value="1">LINDSON AMARO</option>
-                                <option value="2">RONILSON</option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['TEC']->value, 'F');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['F']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['F']->value['id_tecnico'];?>
+"><?php echo $_smarty_tpl->tpl_vars['F']->value['nome'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>
@@ -312,25 +333,37 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="id_servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SER']->value, 'S');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['S']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['S']->value['id_servico'];?>
+"><?php echo $_smarty_tpl->tpl_vars['S']->value['tipo'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
                             </select>
                         </div>
                         <div class="form-group has-success col-sm-6">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="id_categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CAT']->value, 'A');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['A']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['A']->value['id_categoria'];?>
+"><?php echo $_smarty_tpl->tpl_vars['A']->value['categoria'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>   
@@ -391,8 +424,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label class="control-label" for="Tecnico">Técnico</label>
                             <select type="text" name="id_tecnico" id="id_tecnico" class="form-control" required>
                                 <option value="">Selecionar...</option>
-                                <option value="1">LINDSON AMARO</option>
-                                <option value="2">RONILSON</option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['TEC']->value, 'F');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['F']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['F']->value['id_tecnico'];?>
+"><?php echo $_smarty_tpl->tpl_vars['F']->value['nome'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>
@@ -401,12 +444,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label class="control-label" for="servico">Serviço</label>
                             <select id="id_servico" name="id_servico" class="form-control" required>
                                 <option value="">Selecione...</option>
-                                <option value="1"> MANUTENÇÃO DE HARDWARE </option>
-                                <option value="2"> MANUTENÇÃO DE CFTV </option>
-                                <option value="3"> MANUTENÇÃO DE IMPRESSORA </option>
-                                <option value="4"> MANUTENÇÃO DE REDES </option>
-                                <option value="5"> MANUTENÇÃO DE SERVIDORES </option>
-                                <option value="6"> MANUTENÇÃO DE SOFTWARES </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SER']->value, 'S');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['S']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['S']->value['id_servico'];?>
+"><?php echo $_smarty_tpl->tpl_vars['S']->value['tipo'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
                             </select>
                         </div>
@@ -446,16 +495,21 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                         <div class="form-group has-warning col-sm-8">
-                            <label class="control-label" for="categoria">Resolução</label>
+                            <label class="control-label" for="categoria">Categoria do Serviço</label>
                             <select id="id_categoria" name="id_categoria" class="form-control" required>
                                 <option value="">Selecione...</option>
-
-                                <option value="1"> Formatação de PC </option>
-                                <option value="2"> Reinstalação de Softwares </option>
-                                <option value="3"> Manutenção preventiva em PC </option>
-                                <option value="4"> Manutenção preventiva em CFTV </option>
-                                <option value="5"> Manutenção preventiva em Impressora </option>
-                                <option value="6"> Configuração na rede(Modem, Switch e etc) </option>
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CAT']->value, 'A');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['A']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['A']->value['id_categoria'];?>
+"><?php echo $_smarty_tpl->tpl_vars['A']->value['categoria'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
                     </div>   
