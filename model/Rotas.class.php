@@ -73,7 +73,7 @@ class Rotas {
      static function pag_OrdensServicos() {
         return self::get_SiteHOME() . '/ordensservicos';
     }
-    static function pag_Teste() {
-        return self::get_SiteHOME() . '/teste';
+    static function pag_Dashboard() {
+        return self::get_SiteHOME() . '/dashboard';
     }
 }

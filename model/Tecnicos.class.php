@@ -10,7 +10,7 @@ class Tecnicos extends Conexao{
         parent::__construct();
     }
     function GetTecnicos() {
-        $query = "select * from tb_tecnicos";
+        $query = "select * from {$this->prefix}tecnicos";
         $this->ExecuteSQL($query);
 
         $this->GetLista();

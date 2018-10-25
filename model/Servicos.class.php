@@ -12,7 +12,7 @@ class Servicos extends Conexao {
     }
 
     function GetServicos() {
-        $query = "select * from tb_servicos";
+        $query = "select * from {$this->prefix}servicos";
         $this->ExecuteSQL($query);
         $this->GetLista();
     }

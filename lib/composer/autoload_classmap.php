@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Categorias' => $baseDir . '/model/Categorias.class.php',
-    'ClienteModal' => $baseDir . '/model/ClienteModal.class.php',
     'Clientes' => $baseDir . '/model/Clientes.class.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
     'Config' => $baseDir . '/model/Config.class.php',

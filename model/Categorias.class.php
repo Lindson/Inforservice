@@ -11,7 +11,7 @@ class Categorias extends Conexao{
         parent::__construct();
     }
     function GetCategoria() {
-        $query = "select * from tb_categorias";
+        $query = "select * from {$this->prefix}categorias";
         $this->ExecuteSQL($query);
         $this->GetLista();
     }

@@ -3,7 +3,7 @@
  * Sistema de Ordem de Serviço
  *
  * @author inforservice-ce.com.br
- */
+*/
 class Dados extends Conexao {
    
             
@@ -24,4 +24,4 @@ class Dados extends Conexao {
         return $this->TotalDados();
     }
 
-}
+} 
