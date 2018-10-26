@@ -80,36 +80,37 @@
     <script src="{$GET_TEMA}/js/bootstrap-select.js"></script>
     <script src="{$GET_TEMA}/js/bootstrap-select.min.js"></script>
     <script src="{$GET_TEMA}/js/modal.js"></script> 
-
-        <script>
-            var ctx = document.getElementsByClassName("line-chart");
-            var MyChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"],
-                    datasets: [{
-                            label: 'ATENDIMENTO CHAMADOS EM 2017',
-                            data: [{$JAN2017},{$FEV2017}, {$MAR2017}, {$ABR2017}, {$MAI2017}, {$JUN2017}, {$JUL2017}, {$AGO2017},{$SET2017}, {$OUT2017}, {$NOV2017}, {$DEZ2017}],
-                            borderWidth: 6,
-                            borderColor: 'rgba(77, 166, 253, 0.85)',
-                            backgroundColor: 'transparent',
-                        },
-                        {
-                            label: 'ATENDIMENTO CHAMADOS EM 2018',
-                            data: [{$JAN2018},{$FEV2018}, {$MAR2018}, {$ABR2018}, {$MAI2018}, {$JUN2018}, {$JUL2018}, {$AGO2018},{$SET2018}, {$OUT2018}, {$NOV2018}, {$DEZ2018}],
-                            borderWidth: 6,
-                            borderColor: 'rgba(6, 204, 6, 0.85)',
-                            backgroundColor: 'transparent',
-                        },
-                    ]
+    
+<script>
+    var ctx = document.getElementsByClassName("line-chart");
+    var MyChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"],
+            datasets: [{
+                    label: 'ATENDIMENTO CHAMADOS EM 2017',
+                    data: [{$JAN2017},{$FEV2017}, {$MAR2017}, {$ABR2017}, {$MAI2017}, {$JUN2017}, {$JUL2017}, {$AGO2017},{$SET2017}, {$OUT2017}, {$NOV2017}, {$DEZ2017}],
+                    borderWidth: 6,
+                    borderColor: 'rgba(77, 166, 253, 0.85)',
+                    backgroundColor: 'transparent',
                 },
-                options: {
-                    title: {
-                        display: true,
-                        fontSize: 20,
-                        text: "Relatório de atendimento Anual"
-                    }
-                }
-            });
-        </script>
+                {
+                    label: 'ATENDIMENTO CHAMADOS EM 2018',
+                    data: [{$JAN2018},{$FEV2018}, {$MAR2018}, {$ABR2018}, {$MAI2018}, {$JUN2018}, {$JUL2018}, {$AGO2018},{$SET2018}, {$OUT2018}, {$NOV2018}, {$DEZ2018}],
+                    borderWidth: 6,
+                    borderColor: 'rgba(6, 204, 6, 0.85)',
+                    backgroundColor: 'transparent',
+                },
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Relatório de atendimento Anual"
+            }
+        }
+    });
+</script>
+
 </html>

@@ -24,7 +24,7 @@ class Prioridades extends Conexao{
     }
     
        function GetPrioridades() {
-        $query = "select * from tb_prioridades";
+        $query = "select * from {$this->prefix}prioridades";
         $this->ExecuteSQL($query);
 
         $this->GetLista();

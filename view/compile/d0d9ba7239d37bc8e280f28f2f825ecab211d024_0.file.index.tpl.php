@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-25 04:01:44
+/* Smarty version 3.1.33, created on 2018-10-26 01:50:35
   from 'C:\xampp\htdocs\os\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd12408c66389_72831346',
+  'unifunc' => 'content_5bd256cb762653_82767261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d9ba7239d37bc8e280f28f2f825ecab211d024' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\index.tpl',
-      1 => 1540432884,
+      1 => 1540511427,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd12408c66389_72831346 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd256cb762653_82767261 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -131,17 +131,17 @@ function content_5bd12408c66389_72831346 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /js/modal.js"><?php echo '</script'; ?>
 > 
-
-        <?php echo '<script'; ?>
+    
+<?php echo '<script'; ?>
 >
-            var ctx = document.getElementsByClassName("line-chart");
-            var MyChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"],
-                    datasets: [{
-                            label: 'ATENDIMENTO CHAMADOS EM 2017',
-                            data: [<?php echo $_smarty_tpl->tpl_vars['JAN2017']->value;?>
+    var ctx = document.getElementsByClassName("line-chart");
+    var MyChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"],
+            datasets: [{
+                    label: 'ATENDIMENTO CHAMADOS EM 2017',
+                    data: [<?php echo $_smarty_tpl->tpl_vars['JAN2017']->value;?>
 ,<?php echo $_smarty_tpl->tpl_vars['FEV2017']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['MAR2017']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['ABR2017']->value;?>
@@ -154,13 +154,13 @@ function content_5bd12408c66389_72831346 (Smarty_Internal_Template $_smarty_tpl)
 , <?php echo $_smarty_tpl->tpl_vars['NOV2017']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['DEZ2017']->value;?>
 ],
-                            borderWidth: 6,
-                            borderColor: 'rgba(77, 166, 253, 0.85)',
-                            backgroundColor: 'transparent',
-                        },
-                        {
-                            label: 'ATENDIMENTO CHAMADOS EM 2018',
-                            data: [<?php echo $_smarty_tpl->tpl_vars['JAN2018']->value;?>
+                    borderWidth: 6,
+                    borderColor: 'rgba(77, 166, 253, 0.85)',
+                    backgroundColor: 'transparent',
+                },
+                {
+                    label: 'ATENDIMENTO CHAMADOS EM 2018',
+                    data: [<?php echo $_smarty_tpl->tpl_vars['JAN2018']->value;?>
 ,<?php echo $_smarty_tpl->tpl_vars['FEV2018']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['MAR2018']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['ABR2018']->value;?>
@@ -173,21 +173,22 @@ function content_5bd12408c66389_72831346 (Smarty_Internal_Template $_smarty_tpl)
 , <?php echo $_smarty_tpl->tpl_vars['NOV2018']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['DEZ2018']->value;?>
 ],
-                            borderWidth: 6,
-                            borderColor: 'rgba(6, 204, 6, 0.85)',
-                            backgroundColor: 'transparent',
-                        },
-                    ]
+                    borderWidth: 6,
+                    borderColor: 'rgba(6, 204, 6, 0.85)',
+                    backgroundColor: 'transparent',
                 },
-                options: {
-                    title: {
-                        display: true,
-                        fontSize: 20,
-                        text: "Relatório de atendimento Anual"
-                    }
-                }
-            });
-        <?php echo '</script'; ?>
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Relatório de atendimento Anual"
+            }
+        }
+    });
+<?php echo '</script'; ?>
 >
+
 </html><?php }
 }

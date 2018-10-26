@@ -24,4 +24,4 @@ class Dados extends Conexao {
         return $this->TotalDados();
     }
 
-} 
+}

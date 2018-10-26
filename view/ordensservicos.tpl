@@ -32,7 +32,7 @@
                     <th>OS</th>
                     <th>Data abertura</th>
                     <th>Cliente</th>
-                    <th>Tipo</th>
+                    <th>Categoria</th>
                     <th>Solicitante</th>
                     <th>Tecnico</th>                   
                     <th>Status</th>
@@ -377,11 +377,5 @@
 </div> 
                           
 <div class="row">
-  <div class="col-md-2"></div>
-  
-  <div class="col-md-8"> 
-      
-      <canvas class="line-chart"></canvas></div>
-      
-  <div class="col-md-2"></div>
+
 </div>

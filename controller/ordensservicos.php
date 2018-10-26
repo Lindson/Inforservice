@@ -70,8 +70,6 @@ $smarty->assign('VLR', $ordensservico->GetRegistro()); //V
 $smarty->assign('SER', $servicos->GetItens());  //S
 $smarty->assign('CAT', $categorias->GetItens());  //A
 
-//echo '<pre>';
-//var_dump($_POST);
-//echo '</pre>';
+
 $smarty->display('ordensservicos.tpl');
 

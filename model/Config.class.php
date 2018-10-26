@@ -15,7 +15,7 @@ class Config {
          BANCO_LIM_PAG= 10;
     
    /***INFORMAÇÃO DO SITE*/
-    const SITE_URL = "http://localhost:8080/os";
+    const SITE_URL = "http://inforservice-ce/os";
     const SITE_PASTA = "";
     const SITE_NOME = "Inforservice - inforservice-ce.com.br";
     const SITE_EMAIL_ADM = "lindson@inforservice-ce.com.br";

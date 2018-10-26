@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-24 03:16:36
+/* Smarty version 3.1.33, created on 2018-10-25 22:34:12
   from 'C:\xampp\htdocs\os\view\ordensservicos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bcfc7f4329545_61215917',
+  'unifunc' => 'content_5bd228c4962156_94641889',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8e7c5f7d7ee2f00be47f1a1b504229b4f34ceda' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\ordensservicos.tpl',
-      1 => 1540343776,
+      1 => 1540499537,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bcfc7f4329545_61215917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd228c4962156_94641889 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <ol class="breadcrumb">
         <li><a href="">Início</a></li>
@@ -55,7 +55,7 @@ function content_5bcfc7f4329545_61215917 (Smarty_Internal_Template $_smarty_tpl)
                     <th>OS</th>
                     <th>Data abertura</th>
                     <th>Cliente</th>
-                    <th>Tipo</th>
+                    <th>Categoria</th>
                     <th>Solicitante</th>
                     <th>Tecnico</th>                   
                     <th>Status</th>
@@ -533,13 +533,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div> 
                           
 <div class="row">
-  <div class="col-md-2"></div>
-  
-  <div class="col-md-8"> 
-      
-      <canvas class="line-chart"></canvas></div>
-      
-  <div class="col-md-2"></div>
+
 </div>
 <?php }
 }
