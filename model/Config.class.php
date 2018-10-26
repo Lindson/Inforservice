@@ -7,9 +7,9 @@
  */
 class Config {
     /***INFORMAÇÃO DO BANCO DE DADOS*/
-   const BANCO_HOST = "inforservice.mysql.uhserver.com",
-         BANCO_USER = "inforservi",
-         BANCO_SENHA = "Ll313131*",
+   const BANCO_HOST = "host",
+         BANCO_USER = "root",
+         BANCO_SENHA = "****",
          BANCO_BD = "inforservice",
          BANCO_PREFIX = "tb_",
          BANCO_LIM_PAG= 10;
