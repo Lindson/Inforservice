@@ -1,4 +1,4 @@
-<h2>Ops...a pagina não pode ser encontrada! verifique se digitou corretamente. </h2>
+<h2>Ops...verifique se você digitou o endereço correto!</h2>
 
 
 

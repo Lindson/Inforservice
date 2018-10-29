@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-26 01:50:35
+/* Smarty version 3.1.33, created on 2018-10-28 02:35:03
   from 'C:\xampp\htdocs\os\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd256cb762653_82767261',
+  'unifunc' => 'content_5bd50437f12f69_43881331',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d9ba7239d37bc8e280f28f2f825ecab211d024' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\index.tpl',
-      1 => 1540511427,
+      1 => 1540686884,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd256cb762653_82767261 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bd50437f12f69_43881331 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -55,17 +55,19 @@ function content_5bd256cb762653_82767261 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_DASHBOARD']->value;?>
-">Dashboard</a></li>
+"><i class="glyphicon glyphicon-signal"></i> Dashboard</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_ORDEMSERVICO']->value;?>
-">Ordens de Serviço</a></li>
+"><i class="glyphicon glyphicon-time"></i> Ordens de Serviço</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CLIENTE']->value;?>
-">Clientes</a></li>
+"><i class="glyphicon glyphicon-user"></i> Clientes</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_TECNICO']->value;?>
-">Técnicos</a></li>
+"><i class="glyphicon glyphicon-wrench"></i> Técnicos</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SERVICO']->value;?>
-">Serviços</a></li>
+"><i class="glyphicon glyphicon-cog"></i> Serviços</a></li>
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 Minha Conta
@@ -95,9 +97,12 @@ function content_5bd256cb762653_82767261 (Smarty_Internal_Template $_smarty_tpl)
             <div class="container">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <small>
-                        InforService - V1.1.0 | Copyright © 2018 All rights reserved.
+                    <center>
+                        <small>
+                        InforService - V1.1.0 | Copyright © 2018 All rights reserved. &nbsp Hoje é <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
+
                     </small>
+                    </center>
                 </div>
                 <div class="col-md-2"></div>
             </div>

@@ -14,6 +14,7 @@ $smarty->assign('PAG_TECNICO',Rotas::pag_Tecnicos());
 $smarty->assign('PAG_SERVICO',Rotas::pag_Servicos());
 $smarty->assign('PAG_ORDEMSERVICO',Rotas::pag_OrdensServicos());
 $smarty->assign('PAG_DASHBOARD',Rotas::pag_Dashboard());
+$smarty->assign('DATA', Sistema::DataAtualBR());
 
 $smarty->assign('JAN2017',$dados->ContaChamado2017(1));
 $smarty->assign('FEV2017',$dados->ContaChamado2017(2));

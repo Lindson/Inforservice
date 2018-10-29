@@ -1763,8 +1763,8 @@ a:hover,a:active,a:focus {
  min-height:90px;
  background:#e0dbdb;
  width:100%;
- box-shadow:0 1px 1px rgba(0,0,0,0.1);
- border-radius:2px;
+ box-shadow:7px 7px 7px #adadad;
+ border-radius:9px;
  margin-bottom:15px
 }
 .info-box small {
@@ -1809,7 +1809,7 @@ a:hover,a:active,a:focus {
 }
 .progress-description,.info-box-text {
  display:block;
- font-size:14px;
+ font-size:13px;
  white-space:nowrap;
  overflow:hidden;
  text-overflow:ellipsis

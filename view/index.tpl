@@ -26,13 +26,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav">
-                        <li><a href="{$PAG_DASHBOARD}">Dashboard</a></li>
-                        <li><a href="{$PAG_ORDEMSERVICO}">Ordens de Serviço</a></li>
-                        <li><a href="{$PAG_CLIENTE}">Clientes</a></li>
-                        <li><a href="{$PAG_TECNICO}">Técnicos</a></li>
-                        <li><a href="{$PAG_SERVICO}">Serviços</a></li>
+                        <li><a href="{$PAG_DASHBOARD}"><i class="glyphicon glyphicon-signal"></i> Dashboard</a></li>
+                        <li><a href="{$PAG_ORDEMSERVICO}"><i class="glyphicon glyphicon-time"></i> Ordens de Serviço</a></li>
+                        <li><a href="{$PAG_CLIENTE}"><i class="glyphicon glyphicon-user"></i> Clientes</a></li>
+                        <li><a href="{$PAG_TECNICO}"><i class="glyphicon glyphicon-wrench"></i> Técnicos</a></li>
+                        <li><a href="{$PAG_SERVICO}"><i class="glyphicon glyphicon-cog"></i> Serviços</a></li>
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 Minha Conta
@@ -62,9 +64,11 @@
             <div class="container">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <small>
-                        InforService - V1.1.0 | Copyright © 2018 All rights reserved.
+                    <center>
+                        <small>
+                        InforService - V1.1.0 | Copyright © 2018 All rights reserved. &nbsp Hoje é {$DATA}
                     </small>
+                    </center>
                 </div>
                 <div class="col-md-2"></div>
             </div>

@@ -12,6 +12,7 @@ return array(
     'Config' => $baseDir . '/model/Config.class.php',
     'Dados' => $baseDir . '/model/Dados.class.php',
     'Dashboard' => $baseDir . '/model/Dashboard.class.php',
+    'Login' => $baseDir . '/model/Login.class.php',
     'Ordensservicos' => $baseDir . '/model/Ordensservicos.class.php',
     'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Prioridades' => $baseDir . '/model/Prioridades.class.php',

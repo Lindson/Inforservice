@@ -31,6 +31,7 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Dados' => __DIR__ . '/../..' . '/model/Dados.class.php',
         'Dashboard' => __DIR__ . '/../..' . '/model/Dashboard.class.php',
+        'Login' => __DIR__ . '/../..' . '/model/Login.class.php',
         'Ordensservicos' => __DIR__ . '/../..' . '/model/Ordensservicos.class.php',
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Prioridades' => __DIR__ . '/../..' . '/model/Prioridades.class.php',

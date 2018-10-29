@@ -21,19 +21,22 @@ class Rotas {
 
             $pagina = $_GET['pag'];
             // separa a URL pela barra e gera os parametros
-            
+
             self::$pag = explode('/', $pagina);
 
             $pagina = self::$pasta_controller . self::$pag[0] . '.php';
             // verifico se existe a pagina com nome passado na URL
             if (file_exists($pagina)):
                 include $pagina;
-               
+
             // se não existe o arquivo mostra erro
             else:
-                
+
                 include 'erro.php';
             endif;
+        else :
+
+            include 'home.php';
 
 
         endif;
