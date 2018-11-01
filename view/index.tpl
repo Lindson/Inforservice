@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,12 +42,14 @@
                             </a>
                             <div class="dropdown-menu perfil">
                                 <div class="col-sm-4 hidden-xs">
-                                    <img class="img-responsive img-rounded" src="">
+                                    <img class="img-responsive img-rounded" src="{$GET_VIEW}/imagens/{$USER}.jpg">
                                 </div>
                                 <ul class="list-unstyled col-sm-8">
-                                    <li>Lindson Amaro</li>
+                                    {if $LOGADO == true}
+                                    <li>Olá {$USER}</li>
                                     <li><a href="">Alterar Perfil</a></li>
-                                    <li><a href="">Sair</a></li>
+                                    <li><a href="{$PAG_LOGOFF}">Sair</a></li>
+                                    {/if}
                                 </ul>
                             </div>
                         </li>
@@ -80,10 +82,11 @@
   
     <script src="{$GET_TEMA}/js/Chart.min.js"></script>
     <script src="{$GET_TEMA}/js/jquery-2.2.4.min.js"></script>
-    <script src="{$GET_TEMA}/js/bootstrap.min.js"></script>
-    <script src="{$GET_TEMA}/js/bootstrap-select.js"></script>
+    <script src="{$GET_TEMA}/js/bootstrap.js"></script>    
     <script src="{$GET_TEMA}/js/bootstrap-select.min.js"></script>
+    <script src="{$GET_TEMA}/js/loader.js"></script> 
     <script src="{$GET_TEMA}/js/modal.js"></script> 
+    <script src="{$GET_TEMA}/js/main.js"></script> 
     
 <script>
     var ctx = document.getElementsByClassName("line-chart");

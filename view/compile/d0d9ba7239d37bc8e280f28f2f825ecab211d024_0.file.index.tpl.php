@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-28 02:35:03
+/* Smarty version 3.1.33, created on 2018-11-01 00:32:44
   from 'C:\xampp\htdocs\os\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd50437f12f69_43881331',
+  'unifunc' => 'content_5bda3b9c1a1720_25465977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d9ba7239d37bc8e280f28f2f825ecab211d024' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\index.tpl',
-      1 => 1540686884,
+      1 => 1541028675,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd50437f12f69_43881331 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bda3b9c1a1720_25465977 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,12 +75,18 @@ function content_5bd50437f12f69_43881331 (Smarty_Internal_Template $_smarty_tpl)
                             </a>
                             <div class="dropdown-menu perfil">
                                 <div class="col-sm-4 hidden-xs">
-                                    <img class="img-responsive img-rounded" src="">
+                                    <img class="img-responsive img-rounded" src="<?php echo $_smarty_tpl->tpl_vars['GET_VIEW']->value;?>
+/imagens/<?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
+.jpg">
                                 </div>
                                 <ul class="list-unstyled col-sm-8">
-                                    <li>Lindson Amaro</li>
+                                    <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
+                                    <li>Olá <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
+</li>
                                     <li><a href="">Alterar Perfil</a></li>
-                                    <li><a href="">Sair</a></li>
+                                    <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
+">Sair</a></li>
+                                    <?php }?>
                                 </ul>
                             </div>
                         </li>
@@ -122,19 +128,23 @@ function content_5bd50437f12f69_43881331 (Smarty_Internal_Template $_smarty_tpl)
 >
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/js/bootstrap.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/js/bootstrap-select.js"><?php echo '</script'; ?>
->
+/js/bootstrap.js"><?php echo '</script'; ?>
+>    
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /js/bootstrap-select.min.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/js/loader.js"><?php echo '</script'; ?>
+> 
+    <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /js/modal.js"><?php echo '</script'; ?>
+> 
+    <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/js/main.js"><?php echo '</script'; ?>
 > 
     
 <?php echo '<script'; ?>

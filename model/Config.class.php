@@ -7,9 +7,9 @@
  */
 class Config {
     /***INFORMAÇÃO DO BANCO DE DADOS*/
-   const BANCO_HOST = "host",
+   const BANCO_HOST = "localhost",
          BANCO_USER = "root",
-         BANCO_SENHA = "****",
+         BANCO_SENHA = "",
          BANCO_BD = "inforservice",
          BANCO_PREFIX = "tb_",
          BANCO_LIM_PAG= 10;

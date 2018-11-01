@@ -62,6 +62,10 @@ class Rotas {
         return self::get_SiteHOME() . '/login';
     }
 
+    static function pag_Logoff() {
+        return self::get_SiteHOME() . '/logoff';
+    }
+
     static function pag_Clientes() {
         return self::get_SiteHOME() . '/clientes';
     }
@@ -73,10 +77,26 @@ class Rotas {
     static function pag_Servicos() {
         return self::get_SiteHOME() . '/servicos';
     }
-     static function pag_OrdensServicos() {
+    
+    static function pag_MinhaConta() {
+        return self::get_SiteHOME() . '/minhaconta';
+    }
+    
+    static function pag_OrdensServicos() {
         return self::get_SiteHOME() . '/ordensservicos';
     }
+
     static function pag_Dashboard() {
         return self::get_SiteHOME() . '/dashboard';
     }
+
+    static function Redirecionar($tempo, $pagina) {
+        $url = '<meta http-equiv="refresh" content="'.$tempo.'; url='.$pagina.'">';
+        echo $url;
+    }
+    static function Refresh($tempo) {
+        $url = '<meta http-equiv="refresh" content="'.$tempo.'">';
+        echo $url;
+    }
+
 }
