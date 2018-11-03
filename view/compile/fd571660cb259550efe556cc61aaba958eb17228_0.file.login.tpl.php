@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-01 00:32:44
+/* Smarty version 3.1.33, created on 2018-11-03 04:24:30
   from 'C:\xampp\htdocs\os\view\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bda3b9c41aed7_42939936',
+  'unifunc' => 'content_5bdd14ee699776_50336888',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd571660cb259550efe556cc61aaba958eb17228' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\login.tpl',
-      1 => 1541028754,
+      1 => 1541215469,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bda3b9c41aed7_42939936 (Smarty_Internal_Template $_smarty_tpl) {
-?><h3>Tela de Login</h3>
-
+function content_5bdd14ee699776_50336888 (Smarty_Internal_Template $_smarty_tpl) {
+?><h3></h3>
+<br>
+<br>
 <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == false) {?>
 <section class="row" id="fazerlogin">
     <div class="login-form col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <header>
 
-            <h3 class="text-center">Entre com seu <b>e-mail</b> e sua <b>senha</b></h3>
+            <h3 class="text-center">Entre com seu <b>e-mail</b> e <b>senha</b></h3>
         </header>
         <form name="loginn" class="form-signin" method="POST" action="">
             

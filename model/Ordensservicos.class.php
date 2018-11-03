@@ -7,12 +7,21 @@
  */
 class Ordensservicos extends Conexao {
 
-    private $id_chamado, $id_cliente, $id_tecnico, $id_usuario, $id_prioridade, $id_categoria, $descricao, $id_servico, $dt_abertura, $dt_conclusao, $id_status, $solucao;
+    private $id_chamado, $id_cliente, $id_tecnico, $id_usuario, $id_prioridade, $id_categoria, $descricao, $id_servico, $dt_abertura, $dt_conclusao, $id_status, $solucao, $tecnico;
 
     function __construct() {
         parent::__construct();
     }
-
+   function GetTecnico($id_tecnico){
+        
+        if($id_tecnico  == 1):
+           $tecnico = $this->setTecnico('Lindson');
+        else:
+           $tecnico = $this->setTecnico('Ronilson');
+        
+        endif;
+        return $this->tecnico; 
+    }
     function GetOrdensServicos() {
         $query = "select * from v_ordensservicos ORDER BY `id_chamado` DESC";
         $query .= $this->PaginacaoLinks("id_chamado", "v_ordensservicos");
@@ -141,15 +150,17 @@ class Ordensservicos extends Conexao {
           );
         $this->ExecuteSQL($query, $params);   
     }
-    
-    
+
+    function setTecnico($tecnico) {
+        $this->tecnico = $tecnico;
+    }    
     function getId_chamado() {
         return $this->id_chamado;
     }
     function getDt_abertura() {
         return $this->dt_abertura;
     }
-        function getSolucao() {
+    function getSolucao() {
         return $this->solucao;
     }
     function getId_servico() {
@@ -184,7 +195,7 @@ class Ordensservicos extends Conexao {
         $this->id_chamado = $id_chamado;
     }
 
-        function setSolucao($solucao) {
+    function setSolucao($solucao) {
         $this->solucao = $solucao;
     }
     function setDt_abertura($dt_abertura) {

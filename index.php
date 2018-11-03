@@ -23,30 +23,30 @@ if(Login::Logado()):
    $smarty->assign('USER', $_SESSION['USER']['nome']); 
 endif;
 
-//$smarty->assign('JAN2017',$dados->ContaChamado2017(1));
-//$smarty->assign('FEV2017',$dados->ContaChamado2017(2));
-//$smarty->assign('MAR2017',$dados->ContaChamado2017(3));
-//$smarty->assign('ABR2017',$dados->ContaChamado2017(4));
-//$smarty->assign('MAI2017',$dados->ContaChamado2017(5));
-//$smarty->assign('JUN2017',$dados->ContaChamado2017(6));
-//$smarty->assign('JUL2017',$dados->ContaChamado2017(7));
-//$smarty->assign('AGO2017',$dados->ContaChamado2017(8));
-//$smarty->assign('SET2017',$dados->ContaChamado2017(9));
-//$smarty->assign('OUT2017',$dados->ContaChamado2017(10));
-//$smarty->assign('NOV2017',$dados->ContaChamado2017(11));
-//$smarty->assign('DEZ2017',$dados->ContaChamado2017(12));
-//$smarty->assign('JAN2018',$dados->ContaChamado2018(1));
-//$smarty->assign('FEV2018',$dados->ContaChamado2018(2));
-//$smarty->assign('MAR2018',$dados->ContaChamado2018(3));
-//$smarty->assign('ABR2018',$dados->ContaChamado2018(4));
-//$smarty->assign('MAI2018',$dados->ContaChamado2018(5));
-//$smarty->assign('JUN2018',$dados->ContaChamado2018(6));
-//$smarty->assign('JUL2018',$dados->ContaChamado2018(7));
-//$smarty->assign('AGO2018',$dados->ContaChamado2018(8));
-//$smarty->assign('SET2018',$dados->ContaChamado2018(9));
-//$smarty->assign('OUT2018',$dados->ContaChamado2018(10));
-//$smarty->assign('NOV2018',$dados->ContaChamado2018(11));
-//$smarty->assign('DEZ2018',$dados->ContaChamado2018(12));
+$smarty->assign('JAN2017',$dados->ContaChamado2017(1));
+$smarty->assign('FEV2017',$dados->ContaChamado2017(2));
+$smarty->assign('MAR2017',$dados->ContaChamado2017(3));
+$smarty->assign('ABR2017',$dados->ContaChamado2017(4));
+$smarty->assign('MAI2017',$dados->ContaChamado2017(5));
+$smarty->assign('JUN2017',$dados->ContaChamado2017(6));
+$smarty->assign('JUL2017',$dados->ContaChamado2017(7));
+$smarty->assign('AGO2017',$dados->ContaChamado2017(8));
+$smarty->assign('SET2017',$dados->ContaChamado2017(9));
+$smarty->assign('OUT2017',$dados->ContaChamado2017(10));
+$smarty->assign('NOV2017',$dados->ContaChamado2017(11));
+$smarty->assign('DEZ2017',$dados->ContaChamado2017(12));
+$smarty->assign('JAN2018',$dados->ContaChamado2018(1));
+$smarty->assign('FEV2018',$dados->ContaChamado2018(2));
+$smarty->assign('MAR2018',$dados->ContaChamado2018(3));
+$smarty->assign('ABR2018',$dados->ContaChamado2018(4));
+$smarty->assign('MAI2018',$dados->ContaChamado2018(5));
+$smarty->assign('JUN2018',$dados->ContaChamado2018(6));
+$smarty->assign('JUL2018',$dados->ContaChamado2018(7));
+$smarty->assign('AGO2018',$dados->ContaChamado2018(8));
+$smarty->assign('SET2018',$dados->ContaChamado2018(9));
+$smarty->assign('OUT2018',$dados->ContaChamado2018(10));
+$smarty->assign('NOV2018',$dados->ContaChamado2018(11));
+$smarty->assign('DEZ2018',$dados->ContaChamado2018(12));
 
 
 

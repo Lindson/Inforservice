@@ -10,20 +10,6 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'f084d01b0a599f67676cffef638aa95b' => __DIR__ . '/..' . '/smarty/smarty/libs/bootstrap.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'PHPMailer\\PHPMailer\\' => 20,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'PHPMailer\\PHPMailer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
-        ),
-    );
-
     public static $classMap = array (
         'Categorias' => __DIR__ . '/../..' . '/model/Categorias.class.php',
         'Clientes' => __DIR__ . '/../..' . '/model/Clientes.class.php',
@@ -31,22 +17,29 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Dados' => __DIR__ . '/../..' . '/model/Dados.class.php',
         'Dashboard' => __DIR__ . '/../..' . '/model/Dashboard.class.php',
+        'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
+        'EnviarEmail' => __DIR__ . '/../..' . '/model/EnviarEmail.class.php',
         'Login' => __DIR__ . '/../..' . '/model/Login.class.php',
         'Ordensservicos' => __DIR__ . '/../..' . '/model/Ordensservicos.class.php',
+        'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
+        'PHPMailerOAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauth.php',
+        'PHPMailerOAuthGoogle' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
+        'POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.pop3.php',
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Prioridades' => __DIR__ . '/../..' . '/model/Prioridades.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.smtp.php',
         'Servicos' => __DIR__ . '/../..' . '/model/Servicos.class.php',
         'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Tecnicos' => __DIR__ . '/../..' . '/model/Tecnicos.class.php',
         'Template' => __DIR__ . '/../..' . '/model/Template.class.php',
+        'ntlm_sasl_client_class' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
+        'phpmailerException' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e::$classMap;
 
         }, null, ClassLoader::class);
