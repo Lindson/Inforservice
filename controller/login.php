@@ -26,7 +26,9 @@ endif;
 if (Login::Logado()):
     $smarty->assign('USER', $_SESSION['USER']['nome']);
     $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
-
+//    echo '<pre>';
+//    var_dump($_SESSION['USER']);
+//    echo '</pre>';
 endif;
 
 

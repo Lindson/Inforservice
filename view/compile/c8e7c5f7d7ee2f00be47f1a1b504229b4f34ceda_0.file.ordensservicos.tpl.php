@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2018-11-04 00:53:23
+=======
+/* Smarty version 3.1.33, created on 2018-10-25 22:34:12
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
   from 'C:\xampp\htdocs\os\view\ordensservicos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5bde34f36c7ea7_57435192',
+=======
+  'unifunc' => 'content_5bd228c4962156_94641889',
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8e7c5f7d7ee2f00be47f1a1b504229b4f34ceda' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\ordensservicos.tpl',
+<<<<<<< HEAD
       1 => 1541288466,
+=======
+      1 => 1540499537,
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5bde34f36c7ea7_57435192 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5bd228c4962156_94641889 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
 ?><div class="container">
     <ol class="breadcrumb">
         <li><a href="">Início</a></li>

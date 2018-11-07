@@ -25,6 +25,7 @@ class Config {
 
 
     /***DADOS DO SERVIDOR DE EMAIL*/
+<<<<<<< HEAD
      const EMAIL_HOST = "smtp.inforservice-ce.com.br";
      const EMAIL_USER = "lindson@inforservice-ce.com.br";
      const EMAIL_NOME = "Lindson Amaro";
@@ -33,6 +34,15 @@ class Config {
      const EMAIL_SMTPAUTH = true;
      const EMAIL_SMTPSECURE = "";
      const EMAIL_COPIA = "helpdesk@inforservice-ce.com.br";
+=======
+     const EMAIL_HOST = "";
+     const EMAIL_USER = "";
+     const EMAIL_NOME = "";
+     const EMAIL_SENHA = "";
+     const EMAIL_PORTA = "";
+     const EMAIL_SMTPAUTH = "";
+     const EMAIL_SMTPSECURE = "";
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
 
 
 }

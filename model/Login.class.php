@@ -27,11 +27,8 @@ class Login extends Conexao {
         $params = array(':email'=>$user,':senha'=>$senha);
         $this->ExecuteSQL($query,$params);        
         
-        if ($this->TotalDados() == NULL):
-        echo '<div class="alert alert-danger text-center">***Erro ao efetuar o Login*** | e-mail ou senha invalido, por favor tente novamente!</div>';
-            
-           
-        else :
+        if ($this->TotalDados() > 0):
+
             $lista = $this->ListarDados();
             $_SESSION['USER']['id_tecnico'] = $lista['id_tecnico'];
             $_SESSION['USER']['nome'] = $lista['nome'];
@@ -40,10 +37,12 @@ class Login extends Conexao {
             $_SESSION['USER']['dt_admissao'] = $lista['dt_admissao'];
             $_SESSION['USER']['email'] = $lista['email'];
             $_SESSION['USER']['senha'] = $lista['senha'];
-            Rotas::Refresh(0); 
+            Rotas::Refresh(1);
+        else :
+           
+            echo 'Erro ao efetuar o Login';
 
         endif;
-        
     }
     
     /**
@@ -66,7 +65,7 @@ class Login extends Conexao {
      */
     static function Logoff(){
         unset($_SESSION['USER']);
-        Rotas::Redirecionar(0.5, Rotas::pag_Login());
+        Rotas::Redirecionar(0.1, Rotas::pag_Login());
        
     }
 

@@ -14,6 +14,7 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
+<<<<<<< HEAD
             'Psr\\Log\\' => 8,
         ),
         'M' => 
@@ -23,10 +24,14 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'D' => 
         array (
             'DeepCopy\\' => 9,
+=======
+            'PHPMailer\\PHPMailer\\' => 20,
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+<<<<<<< HEAD
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -38,6 +43,11 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+=======
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
         ),
     );
 
@@ -48,6 +58,7 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Dados' => __DIR__ . '/../..' . '/model/Dados.class.php',
         'Dashboard' => __DIR__ . '/../..' . '/model/Dashboard.class.php',
+<<<<<<< HEAD
         'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
         'EnviarEmail' => __DIR__ . '/../..' . '/model/EnviarEmail.class.php',
         'FPDF_TPL' => __DIR__ . '/..' . '/setasign/fpdi/fpdf_tpl.php',
@@ -55,25 +66,25 @@ class ComposerStaticInitdef0b5187e22a9c63dca4d271d80364e
         'FilterASCII85' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterASCII85.php',
         'FilterASCIIHexDecode' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterASCIIHexDecode.php',
         'FilterLZW' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterLZW.php',
+=======
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
         'Login' => __DIR__ . '/../..' . '/model/Login.class.php',
         'Ordensservicos' => __DIR__ . '/../..' . '/model/Ordensservicos.class.php',
-        'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
-        'PHPMailerOAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauth.php',
-        'PHPMailerOAuthGoogle' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
-        'POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.pop3.php',
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
         'Prioridades' => __DIR__ . '/../..' . '/model/Prioridades.class.php',
         'Relatorios' => __DIR__ . '/../..' . '/model/Relatorios.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
-        'SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.smtp.php',
         'Servicos' => __DIR__ . '/../..' . '/model/Servicos.class.php',
         'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Tecnicos' => __DIR__ . '/../..' . '/model/Tecnicos.class.php',
         'Template' => __DIR__ . '/../..' . '/model/Template.class.php',
+<<<<<<< HEAD
         'fpdi_pdf_parser' => __DIR__ . '/..' . '/setasign/fpdi/fpdi_pdf_parser.php',
         'ntlm_sasl_client_class' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
         'pdf_context' => __DIR__ . '/..' . '/setasign/fpdi/pdf_context.php',
         'phpmailerException' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
+=======
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
     );
 
     public static function getInitializer(ClassLoader $loader)

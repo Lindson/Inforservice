@@ -12,6 +12,7 @@ return array(
     'Config' => $baseDir . '/model/Config.class.php',
     'Dados' => $baseDir . '/model/Dados.class.php',
     'Dashboard' => $baseDir . '/model/Dashboard.class.php',
+<<<<<<< HEAD
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
     'EnviarEmail' => $baseDir . '/model/EnviarEmail.class.php',
     'FPDF_TPL' => $vendorDir . '/setasign/fpdi/fpdf_tpl.php',
@@ -19,23 +20,23 @@ return array(
     'FilterASCII85' => $vendorDir . '/setasign/fpdi/filters/FilterASCII85.php',
     'FilterASCIIHexDecode' => $vendorDir . '/setasign/fpdi/filters/FilterASCIIHexDecode.php',
     'FilterLZW' => $vendorDir . '/setasign/fpdi/filters/FilterLZW.php',
+=======
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
     'Login' => $baseDir . '/model/Login.class.php',
     'Ordensservicos' => $baseDir . '/model/Ordensservicos.class.php',
-    'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
-    'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
-    'PHPMailerOAuthGoogle' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
-    'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
     'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Prioridades' => $baseDir . '/model/Prioridades.class.php',
     'Relatorios' => $baseDir . '/model/Relatorios.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
-    'SMTP' => $vendorDir . '/phpmailer/phpmailer/class.smtp.php',
     'Servicos' => $baseDir . '/model/Servicos.class.php',
     'Sistema' => $baseDir . '/model/Sistema.class.php',
     'Tecnicos' => $baseDir . '/model/Tecnicos.class.php',
     'Template' => $baseDir . '/model/Template.class.php',
+<<<<<<< HEAD
     'fpdi_pdf_parser' => $vendorDir . '/setasign/fpdi/fpdi_pdf_parser.php',
     'ntlm_sasl_client_class' => $vendorDir . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
     'pdf_context' => $vendorDir . '/setasign/fpdi/pdf_context.php',
     'phpmailerException' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
+=======
+>>>>>>> parent of a8ee426... Instalando e configurando o PHPMailer
 );

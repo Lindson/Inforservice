@@ -12,10 +12,9 @@ class Tecnicos extends Conexao{
     function GetTecnicos() {
         $query = "select * from {$this->prefix}tecnicos";
         $this->ExecuteSQL($query);
-        $this->GetLista();  
-        
+
+        $this->GetLista();
     }
-    
     private function GetLista() {
         $i = 1;
         while ($lista = $this->ListarDados()):
