@@ -25,6 +25,7 @@ class Conexao extends Config {
         } catch (Exception $ex) {
             exit('<h2>Erro ao conectar ao Banco de Dados!</h2>' . $ex->getMessage());
         }
+        
     }
 
     private function Conectar() {

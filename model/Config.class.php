@@ -26,13 +26,13 @@ class Config {
 
     /***DADOS DO SERVIDOR DE EMAIL*/
      const EMAIL_HOST = "smtp.inforservice-ce.com.br";
-     const EMAIL_USER = "******";
+     const EMAIL_USER = "lindson@inforservice-ce.com.br";
      const EMAIL_NOME = "Lindson Amaro";
-     const EMAIL_SENHA = "******";
+     const EMAIL_SENHA = "ll313131";
      const EMAIL_PORTA = "587";
      const EMAIL_SMTPAUTH = true;
      const EMAIL_SMTPSECURE = "";
-     const EMAIL_COPIA = "*******";
+     const EMAIL_COPIA = "helpdesk@inforservice-ce.com.br";
 
 
 }

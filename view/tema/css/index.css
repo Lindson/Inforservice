@@ -1,7 +1,9 @@
 footer {
        margin-top: 90px;
 }
-
+.navbar {
+       margin-bottom: 2px;
+}
 .logotipo {
 	padding: 10px;
 	margin-right: 20px;

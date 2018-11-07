@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Sistema de Ordem de Serviço
+ *
+ * @author inforservice-ce.com.br
+ */
 if (!Login::Logado()):
 
     echo '<div class="alert alert-danger"> Acesso negado, faça o login! <a class="btn btn-danger" href="' . Rotas::pag_Login() . '"> Login </a></div>';
@@ -29,7 +33,7 @@ else:
 
 
 
-    $smarty->assign('OUT2018', $dados->ContaChamado2018(10));
+    $smarty->assign('MES_ATUAL', $dados->ContaChamado2018(date("m")));
 
     $smarty->display('dashboard.tpl');
 endif;

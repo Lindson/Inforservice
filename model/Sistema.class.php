@@ -11,6 +11,13 @@ class Sistema {
      * 
      * @return String: data atual fotmato BR
      */
+    
+    static function MesAtualBR(){
+        return date("m");
+    }
+    static function AnoAtualBR(){
+        return date("Y");
+    }
     static function DataAtualBR(){
         
         return date('d/m/Y') ;

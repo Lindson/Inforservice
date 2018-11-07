@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-27 03:19:40
+/* Smarty version 3.1.33, created on 2018-11-06 14:41:05
   from 'C:\xampp\htdocs\os\view\dashboard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd3bd2c5692b6_96358754',
+  'unifunc' => 'content_5be199f1689981_48979994',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3818f393fd32093f84b21fb3b726303b12bd4edc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\dashboard.tpl',
-      1 => 1540603152,
+      1 => 1541511652,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd3bd2c5692b6_96358754 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be199f1689981_48979994 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
@@ -38,7 +38,7 @@ function content_5bd3bd2c5692b6_96358754 (Smarty_Internal_Template $_smarty_tpl)
             <span class="info-box-icon bg-green"><i class="glyphicon glyphicon-stats"></i></span>   
             <div class="info-box-content">
                 <span class="info-box-text">Total de Chamados Mês</span>
-                <span class="info-box-number total_purchase"><?php echo $_smarty_tpl->tpl_vars['OUT2018']->value;?>
+                <span class="info-box-number total_purchase"><?php echo $_smarty_tpl->tpl_vars['MES_ATUAL']->value;?>
 </span>
             </div>
         </div>

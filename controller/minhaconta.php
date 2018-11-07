@@ -1,4 +1,9 @@
 <?php
+/**
+ * Sistema de Ordem de Serviço
+ *
+ * @author inforservice-ce.com.br
+ */
 if(!Login::Logado()):
     
     echo '<div class="alert alert-danger"> Acesso negado, faça o login! <a class="btn btn-danger" href="'.Rotas::pag_Login().'"> Login </a></div>';

@@ -8,7 +8,10 @@ require './lib/autoload.php';
 
 $smarty = new Template();
 $dados = new Dados();
+
+$smarty->assign('LOG', Rotas::pag_Login());
 $smarty->assign('GET_TEMA',Rotas::get_SiteTEMA());
+$smarty->assign('HOME',Rotas::get_SiteHOME());
 $smarty->assign('GET_VIEW',Rotas::get_SiteVIEW());
 $smarty->assign('PAG_CLIENTE',Rotas::pag_Clientes());
 $smarty->assign('PAG_TECNICO',Rotas::pag_Tecnicos());
@@ -18,6 +21,7 @@ $smarty->assign('PAG_DASHBOARD',Rotas::pag_Dashboard());
 $smarty->assign('DATA', Sistema::DataAtualBR());
 $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
 $smarty->assign('LOGADO', Login::Logado());
+$smarty->assign('PAG_RELATORIO', Rotas::pag_Relatorio());
 
 if(Login::Logado()):
    $smarty->assign('USER', $_SESSION['USER']['nome']); 

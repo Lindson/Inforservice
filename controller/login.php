@@ -1,4 +1,9 @@
 <?php
+/**
+ * Sistema de Ordem de Serviço
+ *
+ * @author inforservice-ce.com.br
+ */
 if(!isset($_SESSION)):
     session_start();
 endif;
@@ -12,7 +17,7 @@ $smarty->assign('TESTE',  header(Rotas::pag_Login()));
 
 if((isset($_POST['txt_email'])) && (isset($_POST['txt_senha']))):
  $user = $_POST['txt_email'];
- $senha = $_POST['txt_senha']; 
+ $senha = hash('SHA512',$_POST['txt_senha']); 
     
  $login->getLogin($user, $senha);
  

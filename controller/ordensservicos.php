@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Sistema de Ordem de Serviço
+ *
+ * @author inforservice-ce.com.br
+ */
 if (!Login::Logado()):
 
     echo '<div class="alert alert-danger text-center"> Acesso negado, faça o login! <a class="btn btn-facebook" href="' . Rotas::pag_Login() . '"> Login </a></div>';
@@ -129,9 +133,9 @@ else:
     $smarty->assign('VLR', $ordensservico->GetRegistro()); //V
     $smarty->assign('SER', $servicos->GetItens());  //S
     $smarty->assign('CAT', $categorias->GetItens());  //A
-//    
+    
 //    echo '<pre>';
-//    var_dump($_POST);
+//    var_dump($ordensservico->GetItens());
 //    echo '</pre>';
     $smarty->display('ordensservicos.tpl');
 

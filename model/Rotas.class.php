@@ -89,7 +89,15 @@ class Rotas {
     static function pag_Dashboard() {
         return self::get_SiteHOME() . '/dashboard';
     }
-
+    
+    static function pag_Carrosel() {
+        return self::get_SiteHOME() . '/carrosel';
+    }
+    
+    static function pag_Relatorio() {
+        return self::get_SiteHOME() . '/relatorios';
+    }
+    
     static function Redirecionar($tempo, $pagina) {
         $url = '<meta http-equiv="refresh" content="'.$tempo.'; url='.$pagina.'">';
         echo $url;

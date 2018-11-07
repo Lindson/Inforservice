@@ -75,7 +75,7 @@ class Login extends Conexao {
     }
 
     private function setSenha($senha) {
-        $this->senha = $senha;
+        $this->senha = HASH('SHA512',$senha);
     }
     function getUser() {
         return $this->user;

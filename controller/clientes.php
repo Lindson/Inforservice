@@ -58,7 +58,8 @@ $clientes->GetRegistro();
 $smarty->assign('CLIE', $clientes->GetItens());
 $smarty->assign('VLR', $clientes->GetRegistro());
 $smarty->assign('PAGINAS', $clientes->ShowPaginacao());
-//echo '<pre>';
-//var_dump($clientes->GetClientes());
-//echo '</pre>';
+
+echo '<pre>';
+var_dump($clientes->GetItens());
+echo '</pre>';
 $smarty->display('clientes.tpl');

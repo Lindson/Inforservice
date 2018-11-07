@@ -14,7 +14,7 @@
             <span class="info-box-icon bg-green"><i class="glyphicon glyphicon-stats"></i></span>   
             <div class="info-box-content">
                 <span class="info-box-text">Total de Chamados Mês</span>
-                <span class="info-box-number total_purchase">{$OUT2018}</span>
+                <span class="info-box-number total_purchase">{$MES_ATUAL}</span>
             </div>
         </div>
 

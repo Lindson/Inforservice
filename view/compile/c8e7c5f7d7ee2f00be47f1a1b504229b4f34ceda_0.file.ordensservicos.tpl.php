@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-03 04:06:09
+/* Smarty version 3.1.33, created on 2018-11-04 00:53:23
   from 'C:\xampp\htdocs\os\view\ordensservicos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bdd10a1e0d412_09641277',
+  'unifunc' => 'content_5bde34f36c7ea7_57435192',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c8e7c5f7d7ee2f00be47f1a1b504229b4f34ceda' => 
     array (
       0 => 'C:\\xampp\\htdocs\\os\\view\\ordensservicos.tpl',
-      1 => 1541214262,
+      1 => 1541288466,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bdd10a1e0d412_09641277 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bde34f36c7ea7_57435192 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="container">
     <ol class="breadcrumb">
         <li><a href="">Início</a></li>
@@ -55,9 +55,9 @@ function content_5bdd10a1e0d412_09641277 (Smarty_Internal_Template $_smarty_tpl)
                     <th>OS</th>
                     <th>Data abertura</th>
                     <th>Cliente</th>
-                    <th>Categoria</th>
-                    <th>Solicitante</th>
-                    <th>Tecnico</th>                   
+                    <th class="d-none d-sm-table-cell">Categoria</th>
+                    <th class="d-none d-sm-table-cell">Solicitante</th>
+                    <th class="d-none d-sm-table-cell">Tecnico</th>                   
                     <th>Status</th>
                     <th></th>
                 </tr>
@@ -76,11 +76,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['O']->value) {
 </td>
                         <td><?php echo $_smarty_tpl->tpl_vars['O']->value['cliente'];?>
 </td>
-                        <td><?php echo $_smarty_tpl->tpl_vars['O']->value['tipo'];?>
+                        <td class="d-none d-sm-table-cell"><?php echo $_smarty_tpl->tpl_vars['O']->value['tipo'];?>
 </td>
-                        <td><?php echo $_smarty_tpl->tpl_vars['O']->value['usuario'];?>
+                        <td class="d-none d-sm-table-cell"><?php echo $_smarty_tpl->tpl_vars['O']->value['usuario'];?>
 </td>
-                        <td><?php echo $_smarty_tpl->tpl_vars['O']->value['tecnico'];?>
+                        <td class="d-none d-sm-table-cell"><?php echo $_smarty_tpl->tpl_vars['O']->value['tecnico'];?>
 </td>
                         <td><span class="label label-<?php echo $_smarty_tpl->tpl_vars['O']->value['cor'];?>
 "><?php echo $_smarty_tpl->tpl_vars['O']->value['status'];?>

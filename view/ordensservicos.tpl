@@ -32,9 +32,9 @@
                     <th>OS</th>
                     <th>Data abertura</th>
                     <th>Cliente</th>
-                    <th>Categoria</th>
-                    <th>Solicitante</th>
-                    <th>Tecnico</th>                   
+                    <th class="d-none d-sm-table-cell">Categoria</th>
+                    <th class="d-none d-sm-table-cell">Solicitante</th>
+                    <th class="d-none d-sm-table-cell">Tecnico</th>                   
                     <th>Status</th>
                     <th></th>
                 </tr>
@@ -46,9 +46,9 @@
                         <td>{$O.cod_os}</td>
                         <td>{$O.dt_abertura}</td>
                         <td>{$O.cliente}</td>
-                        <td>{$O.tipo}</td>
-                        <td>{$O.usuario}</td>
-                        <td>{$O.tecnico}</td>
+                        <td class="d-none d-sm-table-cell">{$O.tipo}</td>
+                        <td class="d-none d-sm-table-cell">{$O.usuario}</td>
+                        <td class="d-none d-sm-table-cell">{$O.tecnico}</td>
                         <td><span class="label label-{$O.cor}">{$O.status}</span></td>
                         <td class="text-center">
 
